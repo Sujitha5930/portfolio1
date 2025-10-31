@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sujitha Gadamsetty — Portfolio</title>
+  <meta name="description" content="Portfolio of Sujitha Gadamsetty — AI & ML Engineer / Data Analyst" />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6C63FF;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071024 0%,var(--bg) 100%);color:#e6eef6}
+    .container{max-width:1000px;margin:36px auto;padding:28px;}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{
+      width:110px;height:110px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#60a5fa);
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px;
+      color:#042029;box-shadow:0 8px 30px rgba(2,6,23,0.7);
+    }
+    h1{margin:0;font-size:28px;letter-spacing:0.2px}
+    .sub{color:var(--muted);font-size:14px;margin-top:6px}
+    .top-right{margin-left:auto;text-align:right}
+    .contact{display:flex;flex-direction:column;gap:6px;font-size:14px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);margin-top:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    nav{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px;font-size:14px}
+    nav a:hover{background:var(--glass);color:var(--accent)}
+    section{margin-top:18px}
+    .grid{display:grid;grid-template-columns: 1fr 320px;gap:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .project{border-left:3px solid rgba(108,99,255,0.08);padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+    .project h4{margin:0 0 6px 0}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042029;text-decoration:none;font-weight:600}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;} .top-right{text-align:left;margin-top:8px} header{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">SG</div>
+      <div>
+        <h1>Sujitha Gadamsetty</h1>
+        <div class="sub">AI & ML Engineer • Data Analyst • Research Enthusiast</div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#certs">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="top-right">
+        <div class="contact card" style="min-width:200px">
+          <div><strong>Guntur, Andhra Pradesh, India</strong></div>
+          <div class="sub">Phone: <a href="tel:+919030846810" style="color:var(--accent);text-decoration:none">9030846810</a></div>
+          <div class="sub">Email: <a href="mailto:sujithagadamsetty4@gmail.com" style="color:var(--accent);text-decoration:none">sujithagadamsetty4@gmail.com</a></div>
+          <div class="sub">LinkedIn: <a href="https://www.linkedin.com/in/sujitha-gadamsetty-4682a1273" target="_blank" style="color:var(--accent)">Sujitha Gadamsetty</a></div>
+          <div style="margin-top:8px"><a class="btn" href="#contact">Hire / Contact</a></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="card">
+      <div id="about" class="section">
+        <h3>Professional Summary</h3>
+        <p class="sub" style="margin-top:6px">
+          Enthusiastic and detail-oriented Computer Science student specializing in Artificial Intelligence and Machine Learning.
+          Skilled in Python, data analysis, and model development. Passionate about solving real-world problems through innovative and scalable AI solutions.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div>
+          <section id="projects" class="card">
+            <h3>Academic & Research Projects</h3>
+
+            <div class="project" style="margin-top:12px">
+              <h4>Automated Tool Wear Detection</h4>
+              <div class="sub">Machine Learning | SVM | Random Forest</div>
+              <p class="sub" style="margin-top:8px">
+                Developed a tool wear prediction system using vibration and acoustic data from CNC machines.
+                Applied ML models for tool condition classification and optimized preprocessing for improved accuracy.
+              </p>
+            </div>
+
+            <div class="project" style="margin-top:12px">
+              <h4>GAN-Based Watermark Removal</h4>
+              <div class="sub">Deep Learning | TensorFlow | GAN</div>
+              <p class="sub" style="margin-top:8px">
+                Built a Generative Adversarial Network (GAN) to remove watermarks from images using the CLWD dataset and deployed it as a Streamlit web app.
+              </p>
+            </div>
+
+            <div class="project" style="margin-top:12px">
+              <h4>Blood Donation Management Website</h4>
+              <div class="sub">HTML, CSS, JS, PHP, MySQL</div>
+              <p class="sub" style="margin-top:8px">
+                Developed a full-stack web application to manage donor-recipient interactions and automate blood requests with secure user authentication.
+              </p>
+            </div>
+          </section>
+
+          <section id="skills" class="card" style="margin-top:14px">
+            <h3>Technical Skills</h3>
+            <div class="skills" style="margin-top:10px">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">Keras</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">OpenCV</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Jupyter Notebook</span>
+            </div>
+          </section>
+
+          <section id="certs" class="card" style="margin-top:14px">
+            <h3>Certifications</h3>
+            <ul class="sub" style="margin-left:16px">
+              <li>Cisco Networking Academy — Python Essentials 1 & 2, Intro to Cybersecurity</li>
+              <li>Cambridge English — B2 Certification</li>
+              <li>Udemy — AI & ML Complete Guide</li>
+            </ul>
+          </section>
+        </div>
+
+        <aside>
+          <section id="education" class="card">
+            <h3>Education</h3>
+            <p class="sub" style="margin-top:6px">
+              <strong>Vignan’s Foundation for Science, Technology & Research, Guntur</strong><br/>
+              B.Tech in Artificial Intelligence and Machine Learning (2022–2026)<br/>
+              CGPA: 7.44
+            </p>
+          </section>
+
+          <section class="card" style="margin-top:14px">
+            <h3>Internship</h3>
+            <p class="sub" style="margin-top:6px"><strong>Deloitte Data Analytics Virtual Internship (Forage)</strong> — Jul 2025</p>
+            <p class="sub">Completed real-world data analytics simulations, enhancing skills in data visualization and forensic technology.</p>
+          </section>
+
+          <section class="card" style="margin-top:14px">
+            <h3>Leadership & Activities</h3>
+            <ul class="sub" style="margin-left:16px">
+              <li>General Secretary — Department Fest (Apr 2025)</li>
+              <li>Poster Presentation — Engineers' Day (Sep 2024)</li>
+            </ul>
+          </section>
+
+          <section class="card" style="margin-top:14px">
+            <h3>Resume</h3>
+            <p class="sub" style="margin-top:10px">Click below to download my latest resume:</p>
+            <!-- ✅ Make sure resume.pdf exists in the same folder -->
+            <p><a href="resume.pdf" class="btn" download>Download Resume</a></p>
+          </section>
+        </aside>
+      </div>
+
+      <section id="contact" class="card" style="margin-top:18px">
+        <h3>Contact Me</h3>
+        <p class="sub" style="margin-top:6px">
+          I'm open to internships and entry-level AI/ML roles. Reach out for collaboration or research opportunities.
+        </p>
+
+        <form id="contactForm" style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <input name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <input name="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <input name="subject" placeholder="Subject" style="grid-column:1 / -1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <textarea name="message" placeholder="Message" rows="4" style="grid-column:1 / -1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+          <div style="grid-column:1 / -1;text-align:right">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </form>
+
+        <p class="sub" style="margin-top:12px">
+          Or email directly:
+          <a href="mailto:sujithagadamsetty4@gmail.com" style="color:var(--accent)">sujithagadamsetty4@gmail.com</a>
+        </p>
+      </section>
+
+      <footer>
+        Built with ❤ • Based on Sujitha Gadamsetty’s resume (Oct 2025)
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const form = e.target;
+      const name = encodeURIComponent(form.name.value.trim());
+      const email = encodeURIComponent(form.email.value.trim());
+      const subject = encodeURIComponent(form.subject.value.trim() || 'Portfolio contact');
+      const message = encodeURIComponent('From: ' + name + ' (' + email + ')\\n\\n' + form.message.value.trim());
+      window.location.href = `mailto:sujithagadamsetty4@gmail.com?subject=${subject}&body=${message}`;
+    });
+  </script>
+</body>
+</html>
